@@ -18,6 +18,13 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Force HTTPS -->
+    <script>
+        if (window.location.protocol !== 'https:') {
+            window.location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+        }
+    </script>
 </head>
 <body>
     <!-- Loader -->
